@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECS", "ECS\ECS.csproj", "{FE274098-8F6E-49F7-967D-14004C1A8352}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECSTest", "ECSTest\ECSTest.csproj", "{602B1955-6945-488C-AC9E-18FC7CED2039}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{FE274098-8F6E-49F7-967D-14004C1A8352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE274098-8F6E-49F7-967D-14004C1A8352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE274098-8F6E-49F7-967D-14004C1A8352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602B1955-6945-488C-AC9E-18FC7CED2039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602B1955-6945-488C-AC9E-18FC7CED2039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602B1955-6945-488C-AC9E-18FC7CED2039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602B1955-6945-488C-AC9E-18FC7CED2039}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

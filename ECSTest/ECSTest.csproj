@@ -1,17 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <AssemblyName>ECS</AssemblyName>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <OutputType>Exe</OutputType>
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Event\" />
-      <Folder Include="System\" />
+      <ProjectReference Include="..\ECS\ECS.csproj" />
     </ItemGroup>
 
 </Project>
