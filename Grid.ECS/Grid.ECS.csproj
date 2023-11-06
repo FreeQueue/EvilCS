@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <RootNamespace>Grid.ECS</RootNamespace>
+        <PackageId>Grid.ECS</PackageId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Detect\" />
+      <Folder Include="Storage\Resource\" />
+      <Folder Include="Util\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Grid.Util\Grid.Util.csproj" />
+    </ItemGroup>
+
+</Project>
