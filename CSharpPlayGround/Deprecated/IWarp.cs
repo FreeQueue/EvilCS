@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Grid.Util;
+namespace CSharpPlayGround;
 
 
 //思考：这相当于声明了IHasList，可以处理一些其实不是很常见的需求

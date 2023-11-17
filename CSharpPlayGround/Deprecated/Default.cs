@@ -1,4 +1,4 @@
-﻿namespace Grid.Util;
+﻿namespace CSharpPlayGround;
 
 public interface Default<T>
 {

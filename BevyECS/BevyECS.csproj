@@ -1,10 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <PackageId>BevyECS</PackageId>
+        <LangVersion>11</LangVersion>
     </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Detect\" />
+      <Folder Include="Storage\Resource\" />
+    </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Grid.Util\Grid.Util.csproj" />
