@@ -2,15 +2,13 @@
 
 public enum ComponentStatus
 {
-    Add,
-    Mutated
+	Add,
+	Mutated
 }
 
-public record struct Archetype(ArchetypeId id,TableId tableId)
+public record struct Archetype(ArchetypeId id, TableId tableId)
 {
-    // edges: Edges,
-    // entities: Vec<ArchetypeEntity>,
-    // components: ImmutableSparseSet<ComponentId, ArchetypeComponentInfo>,
-
-    
+	// edges: Edges,
+	// entities: Vec<ArchetypeEntity>,
+	// components: ImmutableSparseSet<ComponentId, ArchetypeComponentInfo>,
 }

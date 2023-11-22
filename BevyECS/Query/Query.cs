@@ -1,7 +1,6 @@
 ﻿namespace BevyECS.Query;
 
-public class Query<T> where T: struct
+public class Query<T> where T : struct
 {
-    public readonly T test;
-
+	public readonly T test;
 }

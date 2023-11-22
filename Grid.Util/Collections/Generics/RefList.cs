@@ -8,22 +8,17 @@ namespace Grid.Util.Collections.Generics;
 /// 无序的引用列表，删除操作是无序的，可以获取Span,不能保证安全
 /// </summary>
 /// <typeparam name="T"></typeparam>
-public class UnorderedRefList<T>
+public class RefList<T>
 {
     public Span<T> AsSpan() => _items.AsSpan();
     
-    public Span<T> Slice(int start, int length) {
-        if (start < 0 || start + length > _size) {
-            throw new ArgumentOutOfRangeException(nameof(start));
-        }
-        return _items.AsSpan().Slice(start, length);
-    }
-    
-    public void SwapRemoveAt(int index) {
+    public Span<T> Slice(int start, int length) => AsSpan().Slice(start, length);
+
+    public void SwapRemove(int index) {
         if (index >= _size)
             throw new ArgumentOutOfRangeException(nameof(index));
         _size--;
-        this[index] = this[_size];
+        _items[index] = _items[_size];
         if (RuntimeHelpers.IsReferenceOrContainsReferences<T>()) {
             _items[_size] = default!;
         }
@@ -32,11 +27,11 @@ public class UnorderedRefList<T>
     
     public struct Enumerator
     {
-        private readonly UnorderedRefList<T> _list;
+        private readonly RefList<T> _list;
         private int _index;
         // private readonly int _version;
 
-        internal Enumerator(UnorderedRefList<T> list) {
+        internal Enumerator(RefList<T> list) {
             _list = list;
             _index = 0;
             // _version = list._version;
@@ -71,10 +66,9 @@ public class UnorderedRefList<T>
     // private int _version;
     public int Count => _size;
 
-    private static readonly T[] s_emptyArray = Array.Empty<T>();
 
-    public UnorderedRefList(int capacity=0) {
-        _items = capacity == 0 ? s_emptyArray : new T[capacity];
+    public RefList(int capacity=0) {
+        _items = capacity == 0 ? Array.Empty<T>() : new T[capacity];
     }
 
     public int Capacity {
@@ -88,19 +82,11 @@ public class UnorderedRefList<T>
                 if (_size > 0) Array.Copy(_items, newItems, _size);
                 _items = newItems;
             }
-            else _items = s_emptyArray;
+            else _items = Array.Empty<T>();
         }
     }
 
-    public ref T this[int index] {
-        get {
-            if (index >= _size) {
-                throw new ArgumentOutOfRangeException(nameof(index),
-                    $"{nameof(index)} must less than {nameof(_size)}");
-            }
-            return ref _items[index];
-        }
-    }
+    public ref T this[int index] => ref _items[index];
 
     public void Add(T item) {
         // _version++;

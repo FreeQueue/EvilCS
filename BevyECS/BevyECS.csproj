@@ -11,12 +11,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Detect\" />
-      <Folder Include="Storage\Resource\" />
+        <Folder Include="Detect\"/>
+        <Folder Include="Storage\Resource\"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Grid.Util\Grid.Util.csproj" />
+        <ProjectReference Include="..\Grid.Util\Grid.Util.csproj"/>
     </ItemGroup>
 
 </Project>

@@ -1,10 +1,11 @@
 ﻿namespace BevyECS;
 
 [AttributeUsage(AttributeTargets.Struct)]
-public class StorageTypeAttribute:Attribute
+public class StorageTypeAttribute : Attribute
 {
-    public StorageType StorageType;
-    public StorageTypeAttribute(StorageType storageType) {
-        StorageType = storageType;
-    }
+	public StorageType StorageType;
+
+	public StorageTypeAttribute(StorageType storageType) {
+		StorageType = storageType;
+	}
 }

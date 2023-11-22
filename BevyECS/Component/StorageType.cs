@@ -2,6 +2,6 @@
 
 public enum StorageType
 {
-    Table,
-    SparseSet
+	Table,
+	SparseSet
 }

@@ -8,5 +8,10 @@
     &lt;TestId&gt;NUnit3x::82A7F536-BCD3-40E8-86DF-628D88B1CE0A::net7.0::SimpleECS.Test.Tests.Test1&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=7da9b544_002Dc9c4_002D46d3_002D92a0_002Dbd3fddc70847_0023BevyECS_002ETest/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=82a7f536_002Dbcd3_002D40e8_002D86df_002D628d88b1ce0a_0023SimpleECS_002ETest/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=82c3c92d_002Db998_002D4b5d_002Db197_002D05ce2224cc7a_0023H_005FECS/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=b0b88ebc_002D8267_002D4018_002Dacb0_002Dcb473c72bc5e_0023Grid_002EUtil_002ETest/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=fe274098_002D8f6e_002D49f7_002D967d_002D14004c1a8352_0023BevyECS/@EntryIndexedValue">True</s:Boolean>
 	
 	</wpf:ResourceDictionary>

@@ -44,28 +44,4 @@ public static class ListExtension
         self.Swap(self.Count - 1, index);
         self.RemoveLast();
     }
-
-    public static int BinarySearch<T>(this IList<T> self, T target)
-        where T : IComparable<T> {
-        return self.BinarySearch(target, 0, self.Count - 1);
-    }
-
-    public static int BinarySearch<T>(this IList<T> self, T target, int low, int high)
-        where T : IComparable<T> {
-        while (low <= high) {
-            int mid = (low + high) >>> 1;
-            var midVal = self[mid];
-            switch (midVal.CompareTo(target)) {
-                case < 0:
-                    low = mid + 1;
-                    break;
-                case > 0:
-                    high = mid - 1;
-                    break;
-                default:
-                    return mid; // value found
-            }
-        }
-        return ~low; // value not present
-    }
 }

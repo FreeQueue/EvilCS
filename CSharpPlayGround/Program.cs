@@ -1,6 +1,8 @@
-﻿
+﻿global using Grid.Util;
+using System.Collections.Immutable;
+using System.Runtime.CompilerServices;
 using CSharpPlayGround;
-using Grid.Util;
+using CSharpPlayGround.CSharpTest;
 
 LogTest.Init();
-InterlockedTest.Test();
+

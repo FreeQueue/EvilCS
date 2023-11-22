@@ -2,10 +2,6 @@
 
 public class World
 {
-    
-    public void Spawn() {
-        
-    }
-        
-    
+	public void Spawn() {
+	}
 }
