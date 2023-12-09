@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Grid.Utils\Grid.Utils.csproj" />
+<!--		<ProjectReference Include="..\Grid.ECS.Generator\Grid.ECS.Generator.csproj">-->
+<!--			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>-->
+<!--			<OutputItemType>Analyzer</OutputItemType>-->
+<!--		</ProjectReference>-->
+       
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Command\" />
+		<Folder Include="Query\"/>
+		<Folder Include="Storage\Resource\"/>
+		<Folder Include="System\"/>
+		<Folder Include="World\"/>
+	</ItemGroup>
+
+</Project>

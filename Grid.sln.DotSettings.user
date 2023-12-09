@@ -1,17 +1,20 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
-  &lt;Assembly Path="D:\SDK\Nuget\serilog\3.0.1\lib\net7.0\Serilog.dll" /&gt;&#xD;
-  &lt;Assembly Path="D:\SDK\Nuget\commandlineparser\2.9.1\lib\netstandard2.0\CommandLine.dll" /&gt;&#xD;
-&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/CodeInspection/ExcludedFiles/FilesAndFoldersToSkip2/=A9EBC89F_002D5EC8_002D4D4F_002DBAFD_002DD29E1D02DBF3_002Fd_003AConfiguration_002Ff_003ALoad_002Ecs/@EntryIndexedValue">ForceIncluded</s:String>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer /&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=6bb543da_002D06b0_002D4c6e_002Da704_002D84efc981373e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::82A7F536-BCD3-40E8-86DF-628D88B1CE0A::net7.0::SimpleECS.Test.Tests.Test1&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::78A7AC16-8267-4A44-9F91-D528076C694B::net6.0::Grid.Utils.Playground.Test.PointerTest.Validate&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=7da9b544_002Dc9c4_002D46d3_002D92a0_002Dbd3fddc70847_0023BevyECS_002ETest/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=82a7f536_002Dbcd3_002D40e8_002D86df_002D628d88b1ce0a_0023SimpleECS_002ETest/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=82c3c92d_002Db998_002D4b5d_002Db197_002D05ce2224cc7a_0023H_005FECS/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=b0b88ebc_002D8267_002D4018_002Dacb0_002Dcb473c72bc5e_0023Grid_002EUtil_002ETest/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=fe274098_002D8f6e_002D49f7_002D967d_002D14004c1a8352_0023BevyECS/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=2d374e3b_002Db5f4_002D4471_002Db56a_002D2054cff5ceda_0023BevyECS/@EntryIndexedValue">True</s:Boolean>
+	
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=8a7918de_002Ddbd7_002D42ef_002D9093_002D45cae7f28943_0023BevyECS_002ETest/@EntryIndexedValue">True</s:Boolean>
+	
+	
+	
+	
+	
+	
+	
 	
 	</wpf:ResourceDictionary>
