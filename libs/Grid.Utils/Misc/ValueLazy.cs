@@ -1,9 +1,15 @@
 ﻿namespace Grid.Utils.Misc;
 
-public struct ValueLazy<T>(Func<T> factory)
+public struct ValueLazy<T>
 	where T : notnull
 {
-	public T Value => _value ??= factory();
+	public ValueLazy(Func<T> factory) {
+		_factory = factory;
+		_value = default;
+	}
+	
+	private readonly Func<T> _factory;
+	public T Value => _value ??= _factory();
 	private T? _value = default;
 }
 

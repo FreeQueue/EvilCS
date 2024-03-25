@@ -1,9 +1,10 @@
-﻿using System.Collections.Immutable;
+﻿using System.Collections;
+using System.Collections.Immutable;
 using Grid.Utils.Collections.Generics;
 
 namespace Grid.Utils;
 
-public sealed class TypeSet : IEquatable<TypeSet>
+public sealed class TypeSet : IEquatable<TypeSet>, IEnumerable<Type>
 {
 	public static readonly TypeSet Empty = GetFromSorted(ImmutableArray<TypeId>.Empty);
 	private static readonly Dictionary<int, TypeSet> s_typeSets = new();
@@ -42,6 +43,13 @@ public sealed class TypeSet : IEquatable<TypeSet>
 	}
 	#endregion
 
+	#region IndexOf
+	public int IndexOf<T>() => IndexOf(typeof(T));
+	public int IndexOf(Type type) => IndexOf(type.Id());
+	internal int IndexOf(TypeId id) => TypeIds.BinarySearch(id);
+	
+	#endregion
+	
 	#region Has
 	public bool Has<T>() => Has(typeof(T));
 	public bool Has(Type type) => Has(type.Id());
@@ -104,6 +112,14 @@ public sealed class TypeSet : IEquatable<TypeSet>
 		return result;
 	}
 	#endregion
+
+	public IEnumerator<Type> GetEnumerator() {
+		return Types.GetEnumerator();
+	}
+
+	IEnumerator IEnumerable.GetEnumerator() {
+		return GetEnumerator();
+	}
 
 	public override int GetHashCode() => _hashCode;
 

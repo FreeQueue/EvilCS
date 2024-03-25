@@ -3,8 +3,11 @@ using Grid.Utils.Playground.Utils;
 
 namespace Grid.Utils.Playground.Test;
 
-public class PointerTest(ITestOutputHelper helper) : OutputTestBase(helper)
+public class PointerTest : OutputTestBase
 {
+	public PointerTest(ITestOutputHelper helper) : base(helper) {
+	}
+
 	[Fact]
 	public unsafe void Validate() {
 		Bar bar = new Bar(2);

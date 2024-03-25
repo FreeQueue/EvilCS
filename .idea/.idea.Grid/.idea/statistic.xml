@@ -4,10 +4,7 @@
     <option name="separateTabsFileTypes" value="cs;java;xml;css;html;js;properties;jsp;txt;php;php4;php5;phtml;inc;py;vue;kt" />
     <option name="excludedDirectories">
       <list>
-        <option value="$PROJECT_DIR$/BevyECS" />
-        <option value="$PROJECT_DIR$/BevyECS.Test" />
-        <option value="$PROJECT_DIR$/SimpleECS" />
-        <option value="$PROJECT_DIR$/SimpleECS.Test" />
+        <option value="$PROJECT_DIR$/playground/ecs/SimpleECS" />
       </list>
     </option>
   </component>

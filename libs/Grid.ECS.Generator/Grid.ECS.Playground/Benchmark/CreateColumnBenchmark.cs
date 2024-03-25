@@ -1,6 +1,5 @@
 ﻿using BenchmarkDotNet.Running;
 using Fast.Activator;
-using Fast.Activator.Utils;
 using Grid.ECS.Storage;
 
 namespace Grid.ECS.Playground.Benchmark;

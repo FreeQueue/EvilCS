@@ -1,4 +1,5 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Grid.ECS.Storage;
 
@@ -13,7 +14,7 @@ public readonly record struct TableId(int Index)
 public class Table
 {
 	private readonly Dictionary<TypeId, Column> _columns = new();
-	public List<Entity> Entities { get; } = [];
+	public List<Entity> Entities { get; } = new();
 
 	public Table(TypeSet typeSet) {
 		foreach (var typeId in typeSet.TypeIds) {
@@ -40,7 +41,7 @@ public class Table
 			column = (Column<T>)c;
 			return true;
 		}
-		column = default;
+		column = null;
 		return false;
 	}
 
@@ -51,6 +52,7 @@ public class Table
 	}
 
 	public void SwapRemove(TableRow row) {
+		Debug.Assert(row < Entities.Count);
 		foreach (var column in _columns.Values) {
 			column.SwapRemove(row);
 		}

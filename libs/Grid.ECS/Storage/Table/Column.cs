@@ -13,8 +13,8 @@ public abstract class Column
 		set => Resize(value);
 	}
 
-	protected readonly List<Tick> addTicks = [];
-	protected readonly List<Tick> changeTicks = [];
+	protected readonly List<Tick> addTicks = new();
+	protected readonly List<Tick> changeTicks = new();
 	public IReadOnlyList<Tick> AddTicks => addTicks;
 	public IReadOnlyList<Tick> ChangeTicks => changeTicks;
 
@@ -29,7 +29,7 @@ public abstract class Column
 
 public sealed class Column<T> : Column
 {
-	private readonly List<T> _data = [];
+	private readonly List<T> _data = new();
 
 	public ref T this[TableRow row] => ref CollectionsMarshal.AsSpan(_data)[row];
 

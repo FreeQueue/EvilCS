@@ -23,11 +23,7 @@ public class LogEnricherExample
             .CreateLogger();
     }
 
-    private static List<List<object>> _list = [
-        [1, 2],
-        [new Dictionary<int, int> { { 1, 2 }, { 2, 3 } }, new List<int> { 1, 2 }]
-    ];
-
+ 
     private static Dictionary<int, Dictionary<int, object>> dic = new() {
         {
             1, new() {
@@ -39,8 +35,6 @@ public class LogEnricherExample
             }
         },
     };
-
-    private static IList List => _list;
 
     public static void Test() {
         Init();
